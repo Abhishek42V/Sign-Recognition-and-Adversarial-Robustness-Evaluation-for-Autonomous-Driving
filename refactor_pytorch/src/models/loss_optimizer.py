@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from config import Config
-from model import GTRSB_model
+from refactor_pytorch.config.config import Config
+from refactor_pytorch.src.models.model import GTRSB_model
 
 
 def get_optimizer(model:GTRSB_model,cfg:Config):

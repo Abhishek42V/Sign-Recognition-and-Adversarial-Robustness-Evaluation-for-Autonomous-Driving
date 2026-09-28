@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from config import Config
+from refactor_pytorch.config.config import Config
 from torchinfo import summary
 
 

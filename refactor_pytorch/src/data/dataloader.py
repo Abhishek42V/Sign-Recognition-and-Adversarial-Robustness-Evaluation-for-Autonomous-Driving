@@ -1,6 +1,6 @@
 import torch
 from torch.utils.data import DataLoader,Dataset
-from config import Config
+from refactor_pytorch.config.config import Config
 from utils.utils import worker_init_fn
 
 

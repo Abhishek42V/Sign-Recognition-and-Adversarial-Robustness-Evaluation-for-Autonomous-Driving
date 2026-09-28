@@ -4,14 +4,14 @@ import torch.nn.functional as F
 import torch.optim as optim
 import numpy as np
 import tensorboard as tensorboard
-from config import Config
-from data.load_data import downloader
+from refactor_pytorch.config.config import Config
+from refactor_pytorch.src.data.load_data import downloader
 from utils.utils import set_global_seed,worker_init_fn,TransformedSubset,print_dataset_info,logger
-from data.dataloader import get_train_loader,get_val_loader,get_test_loader
-from models.model import GTRSB_model,model_sanity_checker
-from training.train import train,evaluate
-from training.evaluate import evaluator
-from models.loss_optimizer import get_optimizer,get_loss_function
+from refactor_pytorch.src.data.dataloader import get_train_loader,get_val_loader,get_test_loader
+from refactor_pytorch.src.models.model import GTRSB_model,model_sanity_checker
+from refactor_pytorch.src.training.train import train,evaluate
+from refactor_pytorch.src.training.evaluate import evaluator
+from refactor_pytorch.src.models.loss_optimizer import get_optimizer,get_loss_function
 
 def main():
 

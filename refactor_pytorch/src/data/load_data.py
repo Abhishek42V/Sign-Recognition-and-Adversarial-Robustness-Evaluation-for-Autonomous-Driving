@@ -1,7 +1,7 @@
 from torchvision import datasets,transforms
 from torch.utils.data import Dataset
-from data.preprocess import get_train_transforms,get_test_transforms,get_validation_transforms,compute_stats
-from config import Config
+from src.data.preprocess import get_train_transforms,get_test_transforms,get_validation_transforms,compute_stats
+from refactor_pytorch.config.config import Config
 from typing import Tuple
 from utils.utils import create_train_val_split,assign_transforms_to_subsets,TransformedSubset
 
